@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scan QR Code</title>
+  <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+  <style>
+    #qr-result {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="qr-reader"></div>
+  <div id="qr-result"></div>
+  <audio id="beep" src="beep.mp3"></audio>
+  <script>
+    const qrResultContainer = document.getElementById('qr-result');
+    let lastScannedResult;
+    let scanCount = 0;
+
+    function handleScanSuccess(decodedText, decodedResult) {
+      if (decodedText !== lastScannedResult) {
+        lastScannedResult = decodedText;
+        scanCount++;
+        qrResultContainer.textContent = `Scan result ${decodedText} (Count: ${scanCount})`;
+        document.getElementById("beep").play();
+
+        
+        fetch('https://code.zackym.com/proxy/6161/qr?url=' + encodeURIComponent(decodedText))
+
+      }
+    }
+
+    const html5QrcodeScanner = new Html5QrcodeScanner('qr-reader', { fps: 10, qrbox: 250 });
+    html5QrcodeScanner.render(handleScanSuccess);
+  </script>
+</body>
+</html>
+
