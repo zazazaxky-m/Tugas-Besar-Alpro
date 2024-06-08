@@ -1,9 +1,10 @@
-# Tugas Besar Algoritma dan Pemrograman
+# 💻 Tugas Besar Algoritma dan Pemrograman 💻 
 
-## Deskripsi Proyek
+## Deskripsi Proyek 🦺
 - Proyek ini merupakan bagian dari tugas besar mata kuliah Algoritma dan Pemrograman di Telkom University. Tujuan dari proyek ini adalah untuk mengimplementasikan algoritma dan struktur data yang telah dipelajari selama perkuliahan dalam sebuah program.
+- Solo Coders by Athallah Zacky Maulana (103012330271) 🔥🔥🔥
 
-## Daftar Isi
+## Daftar Isi 🗒️
 - [Deskripsi Proyek](#deskripsi-proyek)
 - [Daftar Isi](#daftar-isi)
 - [Fitur](#fitur)
@@ -11,7 +12,7 @@
 - [Cara Penggunaan](#cara-penggunaan)
 - [Lisensi](#lisensi)
 
-## Fitur
+## Fitur 📝
 - **Pengolahan Data**: Implementasi berbagai algoritma untuk pengolahan data.
 - **Antarmuka Pengguna**: Antarmuka pengguna menggunakan CLI sederhana.
 - **Role**: Projek ini memiliki 2 role yaitu admin dan kasir
